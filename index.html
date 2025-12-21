@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SolScada Privacy Policy - Comprehensive data protection and privacy information for users worldwide">
+    <meta name="keywords" content="SolScada, Privacy Policy, GDPR, CCPA, Data Protection">
     <title>SolScada - Privacy Policy</title>
     <style>
         * {
@@ -43,11 +45,13 @@
         .header h1 {
             font-size: 32px;
             margin-bottom: 10px;
+            font-weight: 700;
         }
         
         .header p {
             opacity: 0.9;
             font-size: 16px;
+            margin-bottom: 5px;
         }
         
         .content {
@@ -66,6 +70,7 @@
         .section:last-child {
             border-bottom: none;
             margin-bottom: 0;
+            padding-bottom: 0;
         }
         
         h2 {
@@ -75,6 +80,7 @@
             display: flex;
             align-items: center;
             gap: 10px;
+            font-weight: 700;
         }
         
         h2::before {
@@ -83,12 +89,14 @@
             height: 25px;
             background: linear-gradient(135deg, #00A8E8 0%, #0077B6 100%);
             border-radius: 2px;
+            flex-shrink: 0;
         }
         
         h3 {
             color: #333;
             font-size: 18px;
             margin: 20px 0 10px;
+            font-weight: 600;
         }
         
         h4 {
@@ -119,6 +127,23 @@
             border-left: 4px solid #0077B6;
         }
         
+        .highlight p {
+            text-align: left;
+        }
+        
+        .note {
+            background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+            padding: 15px 20px;
+            border-radius: 12px;
+            margin: 20px 0;
+            border-left: 4px solid #FF9800;
+        }
+        
+        .note p {
+            text-align: left;
+            margin-bottom: 0;
+        }
+        
         .privacy-badge {
             background: linear-gradient(135deg, #4CAF50 0%, #388E3C 100%);
             color: white;
@@ -126,6 +151,16 @@
             border-radius: 12px;
             margin: 20px 0;
             border-left: 4px solid #2E7D32;
+        }
+        
+        .privacy-badge p,
+        .privacy-badge ul {
+            text-align: left;
+            color: white;
+        }
+        
+        .privacy-badge strong {
+            color: white;
         }
         
         .warning-badge {
@@ -137,6 +172,16 @@
             border-left: 4px solid #E65100;
         }
         
+        .warning-badge p,
+        .warning-badge ul {
+            text-align: left;
+            color: white;
+        }
+        
+        .warning-badge strong {
+            color: white;
+        }
+        
         .contact-box {
             background: linear-gradient(135deg, #00A8E8 0%, #0077B6 100%);
             color: white;
@@ -145,14 +190,24 @@
             margin-top: 30px;
         }
         
-        .contact-box h3, .contact-box h4 {
+        .contact-box h3, 
+        .contact-box h4 {
             color: white;
+            margin-top: 15px;
+        }
+        
+        .contact-box h3:first-child {
             margin-top: 0;
         }
         
         .contact-box a {
             color: #fff;
             text-decoration: underline;
+            font-weight: 500;
+        }
+        
+        .contact-box a:hover {
+            opacity: 0.8;
         }
         
         .contact-box p {
@@ -170,13 +225,14 @@
             font-style: italic;
             margin-top: 30px;
             padding-top: 20px;
-            border-top: 1px solid #eee;
+            border-top: 2px solid #eee;
         }
         
         .jurisdiction-table {
             width: 100%;
             border-collapse: collapse;
             margin: 20px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
         }
         
         .jurisdiction-table th,
@@ -189,22 +245,65 @@
         .jurisdiction-table th {
             background-color: #0077B6;
             color: white;
+            font-weight: 600;
         }
         
         .jurisdiction-table tr:nth-child(even) {
             background-color: #f9f9f9;
         }
         
+        .jurisdiction-table tr:hover {
+            background-color: #e3f2fd;
+        }
+        
         a {
             color: #0077B6;
             text-decoration: none;
+            transition: color 0.2s ease;
         }
         
         a:hover {
             text-decoration: underline;
+            color: #005a8c;
         }
         
-        @media (max-width: 600px) {
+        strong {
+            font-weight: 600;
+        }
+        
+        /* Table of Contents specific styling */
+        .section ol[style*="line-height"] {
+            line-height: 2.2;
+        }
+        
+        /* Smooth scroll behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Print styles */
+        @media print {
+            body {
+                background: white;
+            }
+            
+            .container {
+                max-width: 100%;
+            }
+            
+            .content {
+                box-shadow: none;
+            }
+            
+            .header {
+                background: #0077B6;
+                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact;
+            }
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
             .container {
                 padding: 20px 15px;
             }
@@ -213,12 +312,24 @@
                 padding: 25px 20px;
             }
             
+            .header {
+                padding: 25px 20px;
+            }
+            
             .header h1 {
                 font-size: 24px;
             }
             
+            .logo {
+                font-size: 40px;
+            }
+            
             h2 {
                 font-size: 18px;
+            }
+            
+            h3 {
+                font-size: 16px;
             }
             
             .jurisdiction-table {
@@ -228,6 +339,41 @@
             .jurisdiction-table th,
             .jurisdiction-table td {
                 padding: 8px;
+            }
+            
+            .highlight,
+            .privacy-badge,
+            .warning-badge,
+            .contact-box {
+                padding: 15px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 20px;
+            }
+            
+            .logo {
+                font-size: 36px;
+            }
+            
+            h2 {
+                font-size: 16px;
+                flex-wrap: wrap;
+            }
+            
+            h2::before {
+                height: 20px;
+            }
+            
+            .jurisdiction-table {
+                font-size: 12px;
+            }
+            
+            .jurisdiction-table th,
+            .jurisdiction-table td {
+                padding: 6px;
             }
         }
     </style>
@@ -355,92 +501,115 @@
             
             <div class="section">
                 <h2>4. Information We Collect</h2>
-                <p>We collect and process various categories of personal information to provide and improve our services. The specific data collected depends on your use of the App and the permissions you grant.</p>
+                <p>We collect and process various categories of personal information to provide and improve our services. The specific data collected depends on your use of the App and the permissions you grant. <strong>We only collect data necessary for app functionality and never sell your personal information to third parties.</strong></p>
                 
                 <h3>4.1 Personal Information (Required for Account Creation)</h3>
-                <p>When you register for an account, we collect:</p>
+                <p>When you register for an account, we collect the following <strong>required information</strong>:</p>
                 <ul>
                     <li><strong>Identity Information:</strong> Full name, email address</li>
-                    <li><strong>Authentication Credentials:</strong> Password (stored in encrypted/hashed format)</li>
-                    <li><strong>User Role Information:</strong> Assigned role (Super Admin, Group Admin, Admin, or User) determining access permissions</li>
-                    <li><strong>Account Status:</strong> Approval status, account creation date, last login date</li>
+                    <li><strong>Authentication Credentials:</strong> Password (stored using industry-standard encryption and hashing - we never store plain-text passwords)</li>
+                    <li><strong>User Role Information:</strong> Assigned role (Super Admin, Group Admin, Admin, or User) determining access permissions within your organization</li>
+                    <li><strong>Account Status:</strong> Approval status (pending/approved), account creation timestamp, last login date</li>
                 </ul>
                 
+                <div class="note">
+                    <p><strong>📝 Note:</strong> Account creation requires admin approval. Your account will remain in "pending" status until approved by an authorized administrator.</p>
+                </div>
+                
                 <h3>4.2 Optional Personal Information</h3>
-                <p>You may voluntarily provide:</p>
+                <p>You may <strong>voluntarily choose</strong> to provide additional information to enhance your profile and app experience. <strong>Providing this information is completely optional and not required to use the app:</strong></p>
                 <ul>
                     <li><strong>Contact Information:</strong> Phone number, physical address</li>
-                    <li><strong>Company Information:</strong> Company name, company logo/image, business address</li>
                     <li><strong>Profile Information:</strong> Profile picture, job title, department, additional profile details</li>
                 </ul>
                 
-                <h3>4.3 Solar Plant Data and Technical Information</h3>
-                <p>Our App collects and processes operational data including:</p>
+                <h3>4.2.1 Company Information</h3>
+                <p>When creating or managing a company within the app, you may provide:</p>
                 <ul>
-                    <li><strong>Real-Time Monitoring Data:</strong> Live AC/DC power readings, voltage, current, frequency measurements</li>
-                    <li><strong>Energy Generation Data:</strong> Energy production (kWh), daily/monthly/annual generation totals</li>
-                    <li><strong>Performance Metrics:</strong> Performance Ratio (PR) values, capacity factor, system efficiency</li>
-                    <li><strong>Environmental Data:</strong> Module temperature, ambient temperature, irradiation measurements (W/m²), weather conditions</li>
-                    <li><strong>Equipment Data:</strong> Inverter status, inverter specifications, string monitoring data, device serial numbers</li>
-                    <li><strong>Financial Data:</strong> Revenue calculations (BDT), savings estimates, tariff information</li>
-                    <li><strong>Historical Data:</strong> Trends, analytics, comparative performance data</li>
-                    <li><strong>Site Information:</strong> Site name, site location, site IP address, installed capacity (kWp), site images, plant layout, Single Line Diagram (SLD)</li>
+                    <li><strong>Company Name:</strong> The name of your organization or business entity</li>
+                    <li><strong>Company Logo/Image:</strong> Visual branding image for the company (PNG, JPG, JPEG formats supported)</li>
                 </ul>
+                <p><strong>During Registration:</strong> Company selection is <strong>optional</strong>. If you don't search for and select a specific company, a default company will be automatically assigned to your account. You can change this later after admin approval.</p>
+                
+                <h3>4.2.2 Solar Site Configuration</h3>
+                <p>When adding or configuring solar installation sites, you provide:</p>
+                <ul>
+                    <li><strong>Site Name:</strong> Identifier or name for the solar installation location</li>
+                    <li><strong>Site IP Address:</strong> Network IP address required for connecting to the site's monitoring equipment and data collection systems</li>
+                    <li><strong>Site Image:</strong> Photograph or visual documentation of the solar installation (PNG, JPG, JPEG formats supported)</li>
+                    <li><strong>Site Location/Address:</strong> Text description of the site location (not GPS tracking - see Section 4.5)</li>
+                </ul>
+                <p><strong>Purpose:</strong> This information is essential for establishing connections to solar monitoring equipment, organizing multiple sites, and providing visual context for system management.</p>
+                
+                <div class="note">
+                    <p><strong>🔒 Your Choice:</strong> You can skip any optional fields during registration or in your profile settings. Company and site information is only required when you need to manage organizations or solar installations. The app remains fully functional without this information.</p>
+                </div>
+                
+                <h3>4.3 Solar Plant Data and Technical Information</h3>
+                <p>Our App collects and processes operational data related to solar energy monitoring and management:</p>
+                <ul>
+                    <li><strong>Real-Time Monitoring Data:</strong> Live AC/DC power readings, voltage, current, frequency measurements from connected solar installations</li>
+                    <li><strong>Energy Generation Data:</strong> Energy production (kWh), daily/monthly/annual generation totals, historical energy output</li>
+                    <li><strong>Performance Metrics:</strong> Performance Ratio (PR) values, capacity factor, system efficiency calculations</li>
+                    <li><strong>Environmental Data:</strong> Module temperature, ambient temperature, solar irradiation measurements (W/m²), weather conditions affecting performance</li>
+                    <li><strong>Equipment Data:</strong> Inverter status and specifications, string monitoring data, device serial numbers, equipment health indicators</li>
+                    <li><strong>Financial Data:</strong> Revenue calculations in BDT (Bangladesh Taka), savings estimates, electricity tariff information for cost analysis</li>
+                    <li><strong>Historical Data:</strong> Performance trends, analytics reports, comparative performance data over time</li>
+                    <li><strong>Site Information:</strong> Site name, geographic location coordinates, site IP address (for device connectivity), installed capacity (kWp), site photographs, plant layout diagrams, Single Line Diagram (SLD)</li>
+                </ul>
+                
+                <div class="note">
+                    <p><strong>🌞 Purpose:</strong> This solar plant data is essential for monitoring system performance, detecting issues, optimizing energy production, and providing you with actionable insights about your solar installations.</p>
+                </div>
                 
                 <h3>4.4 Technical and Device Information</h3>
-                <p>We automatically collect certain technical information:</p>
+                <p>We automatically collect certain technical information when you use the App:</p>
                 <ul>
-                    <li><strong>Device Information:</strong> Device type, model, manufacturer, operating system version, device ID</li>
-                    <li><strong>Authentication Tokens:</strong> JWT (JSON Web Token) tokens for secure API access (automatically expire)</li>
-                    <li><strong>Network Information:</strong> IP address, network connection type, mobile carrier (if applicable)</li>
-                    <li><strong>Usage Data:</strong> App usage logs, feature utilization, session duration, pages/screens viewed</li>
-                    <li><strong>Performance Data:</strong> Crash reports, error logs, performance metrics (collected on our own infrastructure)</li>
-                    <li><strong>Time Zone and Language:</strong> Device time zone, preferred language settings</li>
+                    <li><strong>Device Information:</strong> Device type, model, manufacturer, operating system (iOS/Android) and version, unique device identifier</li>
+                    <li><strong>Authentication Tokens:</strong> JWT (JSON Web Token) tokens for secure API access and session management (tokens automatically expire for security)</li>
+                    <li><strong>Network Information:</strong> IP address, network connection type (WiFi/Cellular), mobile carrier name (if applicable)</li>
+                    <li><strong>Usage Data:</strong> App feature usage patterns, session duration, screens/pages viewed, user interaction timestamps</li>
+                    <li><strong>Performance Data:</strong> Crash reports, error logs, app performance metrics (collected on our own secure infrastructure - <strong>not shared with third parties</strong>)</li>
+                    <li><strong>Time Zone and Language:</strong> Device time zone for accurate data display, preferred language settings for localization</li>
                 </ul>
+                
+                <div class="note">
+                    <p><strong>🔐 Security Note:</strong> Technical data is collected solely for app functionality, security, and performance improvement. We do not use analytics platforms that share your data with advertisers.</p>
+                </div>
                 
                 <h3>4.5 Location Data</h3>
-                <p>Location information is collected only with your explicit consent or when voluntarily provided:</p>
-                <ul>
-                    <li><strong>Approximate Location:</strong> Derived from IP address (country, region, city level)</li>
-                    <li><strong>Precise Location:</strong> GPS coordinates (only if you grant location permissions for site-related features)</li>
-                    <li><strong>Provided Addresses:</strong> Business addresses, site locations you manually enter</li>
-                </ul>
-                <p><strong>Purpose:</strong> Location data is used solely for displaying site information, mapping solar plant locations, and providing location-specific features. It is never shared with third parties for marketing or advertising purposes.</p>
+                <p><strong>We do NOT collect or access your device's location data.</strong> Our app does not request location permissions and does not use GPS, Wi-Fi positioning, or cellular location services.</p>
+                
+                <div class="note">
+                    <p><strong>🌍 Location Information You Provide:</strong> You may manually enter site addresses or location names for your solar installations. This is text data you voluntarily provide, not automatic location tracking.</p>
+                </div>
+                
+                <p><strong>What about IP addresses?</strong> While our servers may log your IP address for security and technical purposes (as described in Section 4.4), we do not use IP addresses to determine or track your physical location.</p>
                 
                 <h3>4.6 Sensitive Personal Information</h3>
-                <p>We do not intentionally collect sensitive personal information (also known as "special categories" under GDPR) such as:</p>
+                <p>We <strong>do not intentionally collect</strong> sensitive personal information (also known as "special categories" under GDPR/CCPA) including:</p>
                 <ul>
                     <li>Racial or ethnic origin</li>
                     <li>Political opinions or religious beliefs</li>
                     <li>Trade union membership</li>
-                    <li>Genetic or biometric data</li>
-                    <li>Health information</li>
-                    <li>Sexual orientation or sex life</li>
-                    <li>Criminal convictions or offenses</li>
+                    <li>Genetic or biometric data (e.g., fingerprints, facial recognition)</li>
+                    <li>Health, medical, or mental health information</li>
+                    <li>Sexual orientation or sex life details</li>
+                    <li>Criminal convictions, offenses, or background check information</li>
                 </ul>
-                <p>If such data is inadvertently collected, please contact us immediately for deletion.</p>
+                <p><strong>If such data is inadvertently provided or collected, please contact us immediately at <a href="mailto:kawsar@scube.com.bd">kawsar@scube.com.bd</a> and we will delete it promptly.</strong></p>
                 
                 <h3>4.7 Data We Explicitly Do NOT Collect</h3>
-                <p>To protect your privacy, we explicitly do NOT collect:</p>
+                <p>To protect your privacy, we <strong>explicitly do NOT collect</strong> the following types of data:</p>
                 <ul>
-                    <li>Financial or payment information (app is completely free)</li>
-                    <li>Banking or credit card details</li>
-                    <li>Health, medical, or fitness data</li>
-                    <li>Browsing history or web activity outside the app</li>
-                    <li>Contacts, phone records, or call logs</li>
-                    <li>SMS or messaging content</li>
-                    <li>Photos or media files (except when you choose to upload company/site images)</li>
-                    <li>Microphone or camera access (except when you voluntarily upload images)</li>
-                    <li>Data from other apps on your device</li>
-                    <li>Social media profile information or connections</li>
-                </ul>
-                
-                <h3>4.8 Information from Third Parties</h3>
-                <p>We do not purchase, rent, or otherwise obtain personal information from third-party data brokers. The only information we collect is:</p>
-                <ul>
-                    <li>Information you directly provide to us</li>
-                    <li>Information automatically collected through your use of the App</li>
-                    <li>Information provided by administrators who create your account (name, email, assigned role)</li>
+                    <li>GPS location data or real-time location tracking</li>
+                    <li>Contact lists from your device</li>
+                    <li>Social media account information</li>
+                    <li>Payment or credit card information</li>
+                    <li>Microphone recordings or voice data</li>
+                    <li>Camera access (except when you choose to upload photos)</li>
+                    <li>Browsing history from other apps or websites</li>
+                    <li>Biometric data (fingerprints, facial recognition)</li>
                 </ul>
             </div>
             
@@ -688,6 +857,8 @@
                     <li>In response to valid court orders or subpoenas</li>
                     <li>To comply with applicable laws and regulations</li>
                     <li>To respond to lawful requests from authorities</li>
+                    <li>To protect the rights, property, or safety of SCUBE Technologies, our users, or others</li>
+                    <li>To detect, prevent, or address fraud or security issues</li>
                 </ul>
                 
                 <h3>8.5 What We DO NOT Share</h3>
@@ -709,25 +880,27 @@
                 <h3>9.1 Transfers from the European Union/EEA</h3>
                 <p>We implement appropriate safeguards including:</p>
                 <ul>
-                    <li><strong>Standard Contractual Clauses (SCCs)</strong></li>
-                    <li><strong>Adequacy Decisions</strong></li>
-                    <li><strong>Additional Technical Safeguards</strong></li>
+                    <li><strong>Standard Contractual Clauses (SCCs):</strong> EU-approved contract terms ensuring adequate protection</li>
+                    <li><strong>Adequacy Decisions:</strong> Transfers to countries recognized by the EU as providing adequate protection</li>
+                    <li><strong>Additional Technical Safeguards:</strong> Encryption, access controls, and security measures</li>
                 </ul>
                 
                 <h3>9.2 Transfers from Other Jurisdictions</h3>
                 <p>For Brazil (LGPD), Canada (PIPEDA), Japan (APPI), South Korea (PIPA), and Singapore (PDPA), we ensure:</p>
                 <ul>
-                    <li>Appropriate contractual protections</li>
-                    <li>Consent where required</li>
-                    <li>Compliance with local transfer requirements</li>
+                    <li>Appropriate contractual protections are in place</li>
+                    <li>Consent is obtained where required by local law</li>
+                    <li>Compliance with local transfer requirements and regulations</li>
+                    <li>Adequate level of data protection in recipient countries</li>
                 </ul>
                 
                 <h3>9.3 Security Measures for All Transfers</h3>
                 <ul>
-                    <li>Encryption in transit and at rest</li>
-                    <li>Access controls and authentication</li>
-                    <li>Regular security assessments</li>
-                    <li>Data processing agreements</li>
+                    <li>End-to-end encryption in transit and at rest</li>
+                    <li>Multi-factor authentication and access controls</li>
+                    <li>Regular security assessments and audits</li>
+                    <li>Data processing agreements with all vendors</li>
+                    <li>Monitoring and logging of data access</li>
                 </ul>
             </div>
             
@@ -737,172 +910,229 @@
                 
                 <h3>10.1 Technical Security Measures</h3>
                 <ul>
-                    <li><strong>Encryption:</strong> TLS 1.2+ for transmission, AES-256 for storage</li>
-                    <li><strong>Authentication:</strong> JWT tokens with automatic expiration</li>
-                    <li><strong>Password Security:</strong> Bcrypt/Argon2 hashing</li>
-                    <li><strong>Access Controls:</strong> Role-based access control (RBAC)</li>
-                    <li><strong>Network Security:</strong> Firewalls, intrusion detection, DDoS protection</li>
+                    <li><strong>Encryption:</strong> TLS 1.2+ for data transmission, AES-256 for data storage</li>
+                    <li><strong>Authentication:</strong> JWT tokens with automatic expiration and refresh mechanisms</li>
+                    <li><strong>Password Security:</strong> Bcrypt/Argon2 hashing with salt, minimum 8 characters required</li>
+                    <li><strong>Access Controls:</strong> Role-based access control (RBAC) and principle of least privilege</li>
+                    <li><strong>Network Security:</strong> Firewalls, intrusion detection systems, DDoS protection</li>
+                    <li><strong>Database Security:</strong> Encrypted backups, access logging, SQL injection prevention</li>
                 </ul>
                 
                 <h3>10.2 Administrative Security</h3>
                 <ul>
-                    <li>Strict employee access controls</li>
-                    <li>Background checks for personnel</li>
-                    <li>Confidentiality agreements</li>
-                    <li>Regular security training</li>
-                    <li>Incident response plan</li>
+                    <li>Strict employee access controls with logging and monitoring</li>
+                    <li>Background checks for personnel with data access</li>
+                    <li>Confidentiality agreements and data protection training</li>
+                    <li>Regular security awareness training programs</li>
+                    <li>Comprehensive incident response and disaster recovery plans</li>
+                    <li>Annual security policy reviews and updates</li>
                 </ul>
                 
                 <h3>10.3 Monitoring and Testing</h3>
                 <ul>
-                    <li>24/7 security monitoring</li>
-                    <li>Regular security audits</li>
-                    <li>Penetration testing</li>
-                    <li>Vulnerability assessments</li>
+                    <li>24/7 security monitoring and threat detection</li>
+                    <li>Regular security audits and vulnerability assessments</li>
+                    <li>Annual third-party penetration testing</li>
+                    <li>Automated security scanning and patch management</li>
+                    <li>Continuous compliance monitoring</li>
                 </ul>
                 
                 <div class="warning-badge">
-                    <p><strong>⚠️ Important Security Notice:</strong> While we implement robust security measures, no method is 100% secure. Report any security concerns to <a href="mailto:kawsar@scube.com.bd" style="color: white;">kawsar@scube.com.bd</a></p>
+                    <p><strong>⚠️ Important Security Notice:</strong> While we implement robust security measures, no method of transmission or storage is 100% secure. Please report any security concerns immediately to <a href="mailto:kawsar@scube.com.bd" style="color: white; text-decoration: underline;">kawsar@scube.com.bd</a></p>
                 </div>
             </div>
             
             <div class="section">
                 <h2>11. Data Retention and Deletion</h2>
-                <p>We retain your personal information only as long as necessary.</p>
+                <p>We retain your personal information only as long as necessary for the purposes outlined in this Privacy Policy.</p>
                 
                 <h3>11.1 Retention Periods</h3>
                 <ul>
-                    <li><strong>Account Data:</strong> Retained while account is active, deleted within 30 days after deletion</li>
-                    <li><strong>Solar Performance Data:</strong> Retained indefinitely for analytics (can be deleted on request)</li>
-                    <li><strong>Technical Logs:</strong> Up to 12 months</li>
-                    <li><strong>Communication Records:</strong> 3 years</li>
-                    <li><strong>Backup Data:</strong> Up to 90 days after deletion</li>
+                    <li><strong>Account Data:</strong> Retained while account is active; deleted within 30 days after account deletion request</li>
+                    <li><strong>Solar Performance Data:</strong> Retained for historical analysis purposes; can be deleted upon request</li>
+                    <li><strong>Technical Logs:</strong> Retained for up to 12 months for security and troubleshooting</li>
+                    <li><strong>Communication Records:</strong> Retained for 3 years for customer support and legal purposes</li>
+                    <li><strong>Backup Data:</strong> Maintained for up to 90 days after deletion from active systems</li>
+                    <li><strong>Legal Hold Data:</strong> Retained as required by applicable law or ongoing legal proceedings</li>
                 </ul>
                 
                 <h3>11.2 How to Delete Your Account</h3>
                 <ol>
-                    <li>Open the SolScada app</li>
-                    <li>Tap your profile icon at the top</li>
-                    <li>Select "Delete Account"</li>
+                    <li>Open the SolScada mobile application</li>
+                    <li>Tap your profile icon at the top of the screen</li>
+                    <li>Select "Delete Account" from the menu</li>
+                    <li>Read the deletion warning and consequences</li>
                     <li>Confirm your deletion request</li>
+                    <li>You will receive a confirmation email</li>
                 </ol>
+                
+                <p><strong>Alternative Method:</strong> Email us at <a href="mailto:kawsar@scube.com.bd">kawsar@scube.com.bd</a> with your account deletion request.</p>
                 
                 <h3>11.3 What Happens After Deletion</h3>
                 <ul>
-                    <li>Account immediately deactivated</li>
-                    <li>Personal data deleted from active systems within 30 days</li>
-                    <li>Backup copies deleted within 90 days</li>
-                    <li>Legally required data retained as necessary</li>
+                    <li>Your account is immediately deactivated and you cannot log in</li>
+                    <li>Personal data is deleted from active systems within 30 days</li>
+                    <li>Backup copies are automatically deleted within 90 days</li>
+                    <li>Some data may be retained for legal compliance purposes</li>
+                    <li>Aggregated, anonymized data may be retained for analytics</li>
+                    <li>Data required for ongoing legal obligations will be retained as necessary</li>
                 </ul>
             </div>
             
             <div class="section">
                 <h2>12. Your Rights and Choices</h2>
-                <p>You have significant rights regarding your personal information.</p>
+                <p>You have significant rights regarding your personal information. We are committed to facilitating the exercise of these rights.</p>
                 
-                <h3>12.1 Universal Rights</h3>
+                <h3>12.1 Universal Rights (Available to All Users)</h3>
                 <ul>
-                    <li><strong>Right of Access:</strong> Request a copy of your personal data</li>
-                    <li><strong>Right to Rectification:</strong> Update or correct inaccurate information</li>
-                    <li><strong>Right to Deletion:</strong> Request deletion of your account and data</li>
-                    <li><strong>Right to Data Portability:</strong> Receive your data in portable format</li>
-                    <li><strong>Right to Withdraw Consent:</strong> Withdraw consent at any time</li>
-                    <li><strong>Right to Object:</strong> Object to certain types of processing</li>
+                    <li><strong>Right of Access:</strong> Request a copy of your personal data we hold</li>
+                    <li><strong>Right to Rectification:</strong> Update or correct inaccurate or incomplete information</li>
+                    <li><strong>Right to Deletion:</strong> Request deletion of your account and associated data</li>
+                    <li><strong>Right to Data Portability:</strong> Receive your data in a structured, machine-readable format</li>
+                    <li><strong>Right to Withdraw Consent:</strong> Withdraw consent at any time where processing is based on consent</li>
+                    <li><strong>Right to Object:</strong> Object to certain types of processing, including processing for legitimate interests</li>
+                    <li><strong>Right to Restrict Processing:</strong> Request limitation of processing in certain circumstances</li>
                 </ul>
                 
                 <h3>12.2 How to Exercise Your Rights</h3>
                 <p><strong>Through the App:</strong></p>
                 <ul>
-                    <li>Profile icon → Personal Info (view information)</li>
-                    <li>Profile icon → Update Profile (modify details)</li>
-                    <li>Profile icon → Change Password</li>
-                    <li>Profile icon → Delete Account</li>
+                    <li>Profile icon → Personal Info (view your information)</li>
+                    <li>Profile icon → Update Profile (modify your details)</li>
+                    <li>Profile icon → Change Password (update security credentials)</li>
+                    <li>Profile icon → Delete Account (permanently remove your account)</li>
                 </ul>
                 
                 <p><strong>By Contacting Us:</strong></p>
                 <ul>
-                    <li>Email: <a href="mailto:kawsar@scube.com.bd">kawsar@scube.com.bd</a></li>
-                    <li>Include: Full name, registered email, specific request</li>
-                    <li>Response within 30 days</li>
+                    <li><strong>Email:</strong> <a href="mailto:kawsar@scube.com.bd">kawsar@scube.com.bd</a></li>
+                    <li><strong>Include:</strong> Your full name, registered email address, and specific request</li>
+                    <li><strong>Response Time:</strong> We will respond within 30 days (or as required by applicable law)</li>
+                    <li><strong>Verification:</strong> We may request additional information to verify your identity</li>
                 </ul>
+                
+                <h3>12.3 No Fee for Requests</h3>
+                <p>We do not charge a fee for processing your requests unless they are manifestly unfounded, excessive, or repetitive. In such cases, we may charge a reasonable administrative fee or decline the request.</p>
             </div>
             
             <div class="section">
                 <h2>13. Region-Specific Privacy Rights</h2>
                 
                 <h3>13.1 European Union (GDPR)</h3>
-                <p>Additional rights under GDPR:</p>
+                <p>If you are located in the EU, EEA, UK, or Switzerland, you have additional rights under GDPR:</p>
                 <ul>
-                    <li>Right to lodge complaint with supervisory authority</li>
-                    <li>Right to restrict processing</li>
-                    <li>Right to be informed of data breaches</li>
-                    <li>Right not to be subject to automated decision-making</li>
+                    <li><strong>Right to Lodge Complaint:</strong> File a complaint with your local supervisory authority</li>
+                    <li><strong>Right to Restrict Processing:</strong> Limit how we process your data in certain circumstances</li>
+                    <li><strong>Right to Data Breach Notification:</strong> Be informed of data breaches affecting your rights</li>
+                    <li><strong>Right to Object to Automated Decision-Making:</strong> Not be subject to decisions based solely on automated processing</li>
+                    <li><strong>Right to Erasure ("Right to be Forgotten"):</strong> Have your data deleted in specific circumstances</li>
                 </ul>
                 
                 <h3>13.2 California (CCPA/CPRA)</h3>
-                <p>California residents have rights including:</p>
+                <p>California residents have the following rights:</p>
                 <ul>
-                    <li>Right to know what information is collected</li>
-                    <li>Right to delete personal information</li>
-                    <li>Right to opt-out of sale (we don't sell data)</li>
-                    <li>Right to correct inaccurate information</li>
-                    <li>Right to non-discrimination</li>
+                    <li><strong>Right to Know:</strong> Know what personal information is collected, used, shared, or sold</li>
+                    <li><strong>Right to Delete:</strong> Request deletion of personal information we have collected</li>
+                    <li><strong>Right to Opt-Out:</strong> Opt-out of the sale of personal information (we don't sell data)</li>
+                    <li><strong>Right to Correct:</strong> Correct inaccurate personal information</li>
+                    <li><strong>Right to Non-Discrimination:</strong> Not be discriminated against for exercising privacy rights</li>
+                    <li><strong>Right to Limit:</strong> Limit the use and disclosure of sensitive personal information</li>
                 </ul>
                 
                 <h3>13.3 Brazil (LGPD)</h3>
-                <p>Brazilian users have rights including:</p>
+                <p>Brazilian users (data subjects) have the following rights:</p>
                 <ul>
-                    <li>Confirmation and access to data</li>
-                    <li>Correction of incomplete or inaccurate data</li>
-                    <li>Anonymization, blocking, or deletion</li>
-                    <li>Data portability</li>
-                    <li>Information about sharing with third parties</li>
+                    <li><strong>Confirmation and Access:</strong> Confirm existence of processing and access your data</li>
+                    <li><strong>Correction:</strong> Correct incomplete, inaccurate, or outdated data</li>
+                    <li><strong>Anonymization, Blocking, or Deletion:</strong> Request anonymization, blocking, or deletion of unnecessary or excessive data</li>
+                    <li><strong>Portability:</strong> Receive data in a structured, commonly used format</li>
+                    <li><strong>Information About Sharing:</strong> Know about sharing of data with public and private entities</li>
+                    <li><strong>Revocation of Consent:</strong> Revoke consent at any time</li>
+                    <li><strong>Opposition:</strong> Object to processing based on legitimate interest</li>
                 </ul>
                 
                 <h3>13.4 Canada (PIPEDA)</h3>
-                <p>Canadian residents have rights including:</p>
+                <p>Canadian residents have the following rights:</p>
                 <ul>
-                    <li>Right to access personal information</li>
-                    <li>Right to challenge accuracy</li>
-                    <li>Right to withdraw consent</li>
-                    <li>Right to file complaint with Privacy Commissioner</li>
+                    <li><strong>Right to Access:</strong> Access personal information held by an organization</li>
+                    <li><strong>Right to Challenge Accuracy:</strong> Challenge the accuracy and completeness of information</li>
+                    <li><strong>Right to Withdraw Consent:</strong> Withdraw consent for data processing (with certain limitations)</li>
+                    <li><strong>Right to File Complaint:</strong> File a complaint with the Privacy Commissioner of Canada</li>
+                    <li><strong>Right to Know How Information is Used:</strong> Be informed about why and how information is used</li>
                 </ul>
                 
-                <h3>13.5 Other Jurisdictions</h3>
-                <p>We comply with data protection laws in Japan (APPI), South Korea (PIPA), Singapore (PDPA), and other jurisdictions. Contact us to inquire about your specific rights.</p>
+                <h3>13.5 Japan (APPI)</h3>
+                <p>Japanese users have rights including:</p>
+                <ul>
+                    <li>Right to disclosure of retained personal data</li>
+                    <li>Right to correction, addition, or deletion of retained personal data</li>
+                    <li>Right to suspension of use or erasure of retained personal data</li>
+                    <li>Right to suspension of provision to third parties</li>
+                </ul>
+                
+                <h3>13.6 South Korea (PIPA)</h3>
+                <p>South Korean users have rights including:</p>
+                <ul>
+                    <li>Right to access and inspect personal information</li>
+                    <li>Right to correction of errors in personal information</li>
+                    <li>Right to deletion or suspension of processing</li>
+                    <li>Right to withdraw consent</li>
+                </ul>
+                
+                <h3>13.7 Singapore (PDPA)</h3>
+                <p>Singapore users have rights including:</p>
+                <ul>
+                    <li>Right to access personal data</li>
+                    <li>Right to correct personal data</li>
+                    <li>Right to withdraw consent</li>
+                    <li>Right to file complaints with the Personal Data Protection Commission</li>
+                </ul>
+                
+                <h3>13.8 Other Jurisdictions</h3>
+                <p>We comply with data protection laws in all jurisdictions where we operate. If you are located in a jurisdiction not specifically mentioned, please contact us at <a href="mailto:kawsar@scube.com.bd">kawsar@scube.com.bd</a> to inquire about your specific rights under local law.</p>
             </div>
             
             <div class="section">
                 <h2>14. Children's Privacy</h2>
-                <p>SolScada is not intended for use by individuals under 16 years old.</p>
+                <p>SolScada is not intended for use by children, and we do not knowingly collect personal information from children.</p>
                 
                 <h3>14.1 Age Restrictions</h3>
                 <ul>
-                    <li><strong>Minimum Age:</strong> 16 years globally (18 in some jurisdictions)</li>
-                    <li>We do not knowingly collect information from children</li>
+                    <li><strong>Minimum Age:</strong> 16 years old globally (or 18 years in jurisdictions that require it)</li>
+                    <li><strong>United States:</strong> 13 years old under COPPA (Children's Online Privacy Protection Act)</li>
+                    <li><strong>EU/EEA:</strong> 16 years old under GDPR (may be lower in some member states)</li>
+                    <li>We do not knowingly collect, use, or disclose personal information from children below these age limits</li>
                 </ul>
                 
                 <h3>14.2 If We Discover Child Data</h3>
-                <p>If we learn we have collected data from a child:</p>
+                <p>If we learn that we have collected personal information from a child without proper parental consent:</p>
                 <ul>
-                    <li>We will delete the information immediately</li>
+                    <li>We will delete the information immediately upon discovery</li>
                     <li>We will terminate the associated account</li>
-                    <li>Timeline: Within 30 days of discovery</li>
+                    <li>We will take reasonable steps to notify the parent or guardian</li>
+                    <li>All actions will be completed within 30 days of discovery</li>
                 </ul>
                 
-                <h3>14.3 Parental Rights</h3>
-                <p>If you believe we have collected information from your child, contact us immediately at <a href="mailto:kawsar@scube.com.bd">kawsar@scube.com.bd</a></p>
+                <h3>14.3 Parental Rights and Notifications</h3>
+                <p>If you are a parent or guardian and believe your child has provided personal information to us:</p>
+                <ul>
+                    <li>Contact us immediately at <a href="mailto:kawsar@scube.com.bd">kawsar@scube.com.bd</a></li>
+                    <li>Include your child's name and email address used for registration</li>
+                    <li>We will promptly delete the information and terminate the account</li>
+                    <li>You have the right to review any information we may have collected</li>
+                </ul>
             </div>
             
             <div class="section">
                 <h2>15. Cookies and Tracking Technologies</h2>
-                <p>We use minimal tracking technologies and NO third-party tracking.</p>
+                <p>We use minimal tracking technologies and NO third-party tracking to respect your privacy.</p>
                 
                 <h3>15.1 Technologies We Use</h3>
                 <ul>
-                    <li><strong>Authentication Tokens (JWT):</strong> For secure login sessions</li>
-                    <li><strong>Local Storage:</strong> For user preferences and settings</li>
-                    <li><strong>First-Party Analytics:</strong> On our own infrastructure only</li>
+                    <li><strong>Authentication Tokens (JWT):</strong> Secure JSON Web Tokens for maintaining login sessions and API authentication</li>
+                    <li><strong>Local Storage:</strong> Browser/app local storage for saving user preferences, settings, and temporary data</li>
+                    <li><strong>Session Storage:</strong> Temporary storage that clears when you close the app</li>
+                    <li><strong>First-Party Analytics:</strong> Basic usage analytics processed exclusively on our own infrastructure</li>
                 </ul>
                 
                 <h3>15.2 What We DO NOT Use</h3>
@@ -910,119 +1140,201 @@
                     <ul>
                         <li>❌ No third-party advertising cookies</li>
                         <li>❌ No cross-site tracking cookies</li>
-                        <li>❌ No social media tracking pixels</li>
-                        <li>❌ No fingerprinting techniques</li>
-                        <li>❌ No third-party analytics (Google Analytics, etc.)</li>
+                        <li>❌ No social media tracking pixels (Facebook Pixel, Twitter Pixel, etc.)</li>
+                        <li>❌ No browser fingerprinting techniques</li>
+                        <li>❌ No third-party analytics services (Google Analytics, Mixpanel, Amplitude, etc.)</li>
+                        <li>❌ No retargeting or remarketing cookies</li>
+                        <li>❌ No affiliate tracking cookies</li>
                     </ul>
                 </div>
+                
+                <h3>15.3 Managing Cookies and Tracking</h3>
+                <p>Since we only use essential cookies for app functionality:</p>
+                <ul>
+                    <li>You can clear app data through your device settings</li>
+                    <li>Logging out will clear session data</li>
+                    <li>Deleting your account will remove all associated data</li>
+                    <li>There are no marketing or advertising cookies to opt out of</li>
+                </ul>
             </div>
             
             <div class="section">
                 <h2>16. Third-Party Services and SDKs</h2>
-                <p>We minimize third-party integrations to protect your privacy.</p>
+                <p>We minimize third-party integrations to protect your privacy and maintain control over your data.</p>
                 
                 <h3>16.1 What We DO NOT Use</h3>
                 <div class="privacy-badge">
                     <ul>
-                        <li>✅ No Google Analytics or Firebase</li>
-                        <li>✅ No Facebook SDK or Meta Pixel</li>
-                        <li>✅ No advertising networks</li>
-                        <li>✅ No third-party authentication</li>
-                        <li>✅ No A/B testing SDKs</li>
-                        <li>✅ 100% proprietary authentication system</li>
+                        <li>✅ No Google Analytics, Firebase Analytics, or Google Marketing Platform</li>
+                        <li>✅ No Facebook SDK, Meta Pixel, or Instagram tracking</li>
+                        <li>✅ No advertising networks (AdMob, AdSense, etc.)</li>
+                        <li>✅ No third-party authentication providers (Google Sign-In, Facebook Login, etc.)</li>
+                        <li>✅ No A/B testing SDKs (Optimizely, VWO, etc.)</li>
+                        <li>✅ No crash reporting services (Crashlytics, Sentry, Bugsnag)</li>
+                        <li>✅ No attribution or marketing analytics (Adjust, AppsFlyer, Branch)</li>
+                        <li>✅ 100% proprietary, in-house authentication system</li>
                     </ul>
                 </div>
                 
                 <h3>16.2 What We DO Use</h3>
                 <ul>
-                    <li><strong>Cloud Infrastructure:</strong> Secure hosting with data processing agreements</li>
-                    <li><strong>Email Service:</strong> For transactional emails only (not marketing)</li>
-                    <li><strong>In-House Systems:</strong> Custom authentication and analytics</li>
+                    <li><strong>Cloud Infrastructure Provider:</strong> For secure hosting and data storage (with strict data processing agreements in place)</li>
+                    <li><strong>Email Service Provider:</strong> For sending transactional emails only (account verification, password resets, security alerts - NOT marketing)</li>
+                    <li><strong>In-House Systems:</strong> Custom-built authentication, analytics, and monitoring systems that we fully control</li>
                 </ul>
                 
-                <h3>16.3 Your Data is Never Sold</h3>
+                <h3>16.3 Data Processing Agreements</h3>
+                <p>All third-party service providers are required to:</p>
+                <ul>
+                    <li>Sign comprehensive data processing agreements</li>
+                    <li>Comply with applicable data protection laws</li>
+                    <li>Implement appropriate security measures</li>
+                    <li>Only process data according to our instructions</li>
+                    <li>Not use your data for their own purposes</li>
+                    <li>Notify us of any data breaches immediately</li>
+                </ul>
+                
+                <h3>16.4 Your Data is Never Sold or Shared for Marketing</h3>
                 <div class="highlight">
-                    <p><strong>We do NOT:</strong></p>
+                    <p><strong>We do NOT and will NOT:</strong></p>
                     <ul>
-                        <li>Sell your personal information</li>
-                        <li>Share data with advertising networks</li>
-                        <li>Provide data to data brokers</li>
+                        <li>Sell your personal information to anyone</li>
+                        <li>Share your data with advertising networks</li>
+                        <li>Provide your data to data brokers or aggregators</li>
+                        <li>Use your data for behavioral advertising</li>
                         <li>Monetize your data in any way</li>
+                        <li>Share data with social media platforms</li>
                     </ul>
                 </div>
             </div>
             
             <div class="section">
                 <h2>17. Automated Decision-Making and Profiling</h2>
-                <p>We do NOT engage in automated decision-making that produces legal effects or significantly affects you.</p>
+                <p>We are committed to transparency about automated processing and do not engage in automated decision-making that produces significant legal or similar effects.</p>
                 
                 <h3>17.1 Limited Automated Processing</h3>
-                <p>We use limited automation only for:</p>
+                <p>We use limited automation only for essential operational purposes:</p>
                 <ul>
-                    <li><strong>Account Management:</strong> Session management, automatic logout</li>
-                    <li><strong>Solar Data Processing:</strong> Automatic calculations (PR, efficiency, revenue)</li>
-                    <li><strong>Security:</strong> Fraud detection, spam prevention</li>
+                    <li><strong>Account Management:</strong> Automated session management, automatic logout after inactivity for security</li>
+                    <li><strong>Solar Data Processing:</strong> Automatic calculations for Performance Ratio (PR), system efficiency, revenue estimates</li>
+                    <li><strong>Security:</strong> Automated fraud detection, spam prevention, unusual activity alerts</li>
+                    <li><strong>System Optimization:</strong> Automatic data aggregation and basic analytics for app improvement</li>
                 </ul>
                 
-                <h3>17.2 No Profiling for Marketing</h3>
-                <p>We do NOT create profiles for:</p>
+                <p><strong>Important:</strong> None of these automated processes make decisions that legally affect you or significantly impact your rights.</p>
+                
+                <h3>17.2 No Profiling for Marketing or Discrimination</h3>
+                <p>We do NOT create user profiles or use automated decision-making for:</p>
                 <ul>
-                    <li>Marketing or advertising</li>
+                    <li>Marketing, advertising, or promotional purposes</li>
                     <li>Behavior prediction or manipulation</li>
-                    <li>Discrimination</li>
-                    <li>Price discrimination</li>
+                    <li>Creditworthiness or financial assessments</li>
+                    <li>Employment or hiring decisions</li>
+                    <li>Price discrimination or dynamic pricing</li>
+                    <li>Eligibility for services or benefits</li>
+                    <li>Any form of discrimination based on protected characteristics</li>
+                </ul>
+                
+                <h3>17.3 Your Rights Regarding Automated Processing</h3>
+                <p>You have the right to:</p>
+                <ul>
+                    <li>Be informed about the existence of automated decision-making</li>
+                    <li>Understand the logic involved in automated processing</li>
+                    <li>Contest decisions made by automated systems</li>
+                    <li>Request human intervention for important decisions</li>
+                    <li>Express your point of view regarding automated decisions</li>
                 </ul>
             </div>
             
             <div class="section">
                 <h2>18. Data Breach Notification</h2>
-                <p>We have comprehensive procedures to respond to potential data breaches.</p>
+                <p>We have comprehensive procedures to detect, respond to, and notify users about potential data breaches.</p>
                 
-                <h3>18.1 Notification Timelines</h3>
+                <h3>18.1 Breach Detection and Response</h3>
+                <p>Our security team continuously monitors for potential breaches through:</p>
                 <ul>
-                    <li><strong>EU/EEA (GDPR):</strong> Within 72 hours to authorities</li>
-                    <li><strong>Users:</strong> Without undue delay</li>
-                    <li><strong>Other Jurisdictions:</strong> As required by law</li>
+                    <li>24/7 automated security monitoring and alerting</li>
+                    <li>Intrusion detection and prevention systems</li>
+                    <li>Regular security audits and vulnerability assessments</li>
+                    <li>Employee training on identifying and reporting security incidents</li>
                 </ul>
                 
-                <h3>18.2 Information Provided</h3>
-                <p>Breach notifications will include:</p>
+                <h3>18.2 Notification Timelines</h3>
                 <ul>
-                    <li>Nature of the breach</li>
-                    <li>Data affected</li>
-                    <li>Potential consequences</li>
-                    <li>Measures taken</li>
-                    <li>Recommended actions</li>
-                    <li>Contact information</li>
+                    <li><strong>EU/EEA (GDPR):</strong> Within 72 hours to supervisory authorities; without undue delay to affected users</li>
+                    <li><strong>California (CCPA):</strong> Without unreasonable delay, as required by law</li>
+                    <li><strong>Brazil (LGPD):</strong> Within a reasonable timeframe to authorities and affected users</li>
+                    <li><strong>Canada (PIPEDA):</strong> As soon as feasible to authorities and affected individuals</li>
+                    <li><strong>Other Jurisdictions:</strong> As required by applicable local laws</li>
+                    <li><strong>Users:</strong> Notification without undue delay if breach poses risk to rights and freedoms</li>
+                </ul>
+                
+                <h3>18.3 Information Provided in Breach Notifications</h3>
+                <p>If we notify you of a data breach, our notification will include:</p>
+                <ul>
+                    <li><strong>Nature of the Breach:</strong> Description of what happened and how it occurred</li>
+                    <li><strong>Data Affected:</strong> Categories and approximate number of affected users and data records</li>
+                    <li><strong>Potential Consequences:</strong> Likely impact on affected individuals</li>
+                    <li><strong>Measures Taken:</strong> Actions we have taken or propose to take to address the breach</li>
+                    <li><strong>Recommended Actions:</strong> Steps you can take to protect yourself</li>
+                    <li><strong>Contact Information:</strong> How to contact us for more information or questions</li>
+                    <li><strong>Timeline:</strong> When the breach was discovered and our response timeline</li>
+                </ul>
+                
+                <h3>18.4 How We Will Contact You</h3>
+                <p>In the event of a data breach, we will notify you through:</p>
+                <ul>
+                    <li>Email to your registered email address</li>
+                    <li>In-app notification within the SolScada application</li>
+                    <li>Public notice on our website (if large-scale breach)</li>
+                </ul>
+                
+                <h3>18.5 Your Actions After a Breach</h3>
+                <p>If you receive a breach notification from us:</p>
+                <ul>
+                    <li>Follow the recommended actions in our notification</li>
+                    <li>Change your password immediately if credentials may be compromised</li>
+                    <li>Monitor your accounts for suspicious activity</li>
+                    <li>Contact us if you have questions or concerns</li>
+                    <li>Consider enabling additional security measures</li>
                 </ul>
             </div>
             
             <div class="section">
                 <h2>19. Changes to This Privacy Policy</h2>
-                <p>We may update this Privacy Policy from time to time.</p>
+                <p>We may update this Privacy Policy from time to time to reflect changes in our practices, technology, legal requirements, or other factors.</p>
                 
-                <h3>19.1 How We Notify You</h3>
-                <p><strong>For Material Changes:</strong></p>
+                <h3>19.1 How We Notify You of Changes</h3>
+                
+                <h4>For Material Changes:</h4>
+                <p>Material changes that significantly affect how we collect, use, or share your personal information will be communicated through:</p>
                 <ul>
-                    <li>In-app notification</li>
-                    <li>Email notification</li>
-                    <li>Minimum 30 days advance notice</li>
-                    <li>May require acceptance before continued use</li>
+                    <li><strong>In-App Notification:</strong> Prominent notification when you open the app</li>
+                    <li><strong>Email Notification:</strong> Message sent to your registered email address</li>
+                    <li><strong>Advance Notice:</strong> Minimum 30 days before changes take effect</li>
+                    <li><strong>Acceptance Requirement:</strong> May require you to accept updated policy before continuing to use the app</li>
+                    <li><strong>Website Update:</strong> Posted on our website with clear indication of changes</li>
                 </ul>
                 
-                <p><strong>For Non-Material Changes:</strong></p>
+                <h4>For Non-Material Changes:</h4>
+                <p>Minor updates, clarifications, or administrative changes will be handled through:</p>
                 <ul>
-                    <li>Updated "Last Updated" date</li>
-                    <li>Posted without separate notification</li>
-                    <li>Effective immediately</li>
+                    <li>Updated "Last Updated" date at the top of this policy</li>
+                    <li>Posted on our website without separate notification</li>
+                    <li>Effective immediately upon posting</li>
+                    <li>Available for review at any time in the app</li>
                 </ul>
                 
-                <h3>19.2 Your Options</h3>
+                <h3>19.2 Your Options When Policy Changes</h3>
                 <ul>
-                    <li><strong>Accept:</strong> Continue using the app</li>
-                    <li><strong>Reject:</strong> Delete your account before changes take effect</li>
-                    <li><strong>Contact Us:</strong> Ask questions about changes</li>
+                    <li><strong>Accept:</strong> Continue using the app under the new terms</li>
+                    <li><strong>Reject:</strong> Delete your account before changes take effect if you disagree</li>
+                    <li><strong>Contact Us:</strong> Ask questions or request clarification about changes</li>
+                    <li><strong>Review:</strong> Take time to carefully review changes before accepting</li>
                 </ul>
+                
+                <h3>19.3 Version History</h3>
+                <p>We maintain a version history of our Privacy Policy. You can request previous versions by contacting us at <a href="mailto:kawsar@scube.com.bd">kawsar@scube.com.bd</a>.</p>
             </div>
             
             <div class="section">
@@ -1030,6 +1342,7 @@
                 
                 <div class="contact-box">
                     <h3>SCUBE Technologies Ltd.</h3>
+                    
                     <h4>General Contact Information</h4>
                     <p><strong>Registered Address:</strong><br>
                     Navana Mashira, House-275K, Level-7<br>
@@ -1038,11 +1351,17 @@
                     
                     <p><strong>Email:</strong> <a href="mailto:kawsar@scube.com.bd">kawsar@scube.com.bd</a></p>
                     <p><strong>Phone:</strong> <a href="tel:+8801329665767">+880 1329 665767</a></p>
-                    <p><strong>Business Hours:</strong> Sunday-Thursday, 9:00 AM - 6:00 PM (GMT+6)</p>
+                    <p><strong>Business Hours:</strong> Sunday-Thursday, 9:00 AM - 6:00 PM (GMT+6, Bangladesh Time)</p>
                     
-                    <h4 style="margin-top: 20px;">Data Protection Officer</h4>
+                    <h4>Data Protection Officer</h4>
                     <p><strong>Email:</strong> <a href="mailto:kawsar@scube.com.bd">kawsar@scube.com.bd</a></p>
-                    <p>Contact for GDPR, LGPD, and other data protection inquiries</p>
+                    <p>For GDPR, LGPD, CCPA/CPRA, and other data protection inquiries</p>
+                    
+                    <h4>EU Representative</h4>
+                    <p>For users in the European Union: <a href="mailto:kawsar@scube.com.bd">kawsar@scube.com.bd</a></p>
+                    
+                    <h4>UK Representative</h4>
+                    <p>For users in the United Kingdom: <a href="mailto:kawsar@scube.com.bd">kawsar@scube.com.bd</a></p>
                 </div>
                 
                 <h3>20.1 Response Times</h3>
@@ -1059,7 +1378,7 @@
                             <td>7 business days</td>
                         </tr>
                         <tr>
-                            <td>Data Access Requests</td>
+                            <td>Data Access Requests (GDPR, CCPA)</td>
                             <td>30 days</td>
                         </tr>
                         <tr>
@@ -1071,96 +1390,146 @@
                             <td>15 days</td>
                         </tr>
                         <tr>
-                            <td>Security Reports</td>
+                            <td>Security Incident Reports</td>
                             <td>24-48 hours</td>
+                        </tr>
+                        <tr>
+                            <td>Privacy Rights Requests</td>
+                            <td>30 days (45 days if complex)</td>
                         </tr>
                     </tbody>
                 </table>
+                
+                <h3>20.2 How to Contact Us</h3>
+                <p>When contacting us about privacy matters, please include:</p>
+                <ul>
+                    <li>Your full name</li>
+                    <li>Registered email address</li>
+                    <li>Nature of your inquiry or request</li>
+                    <li>Any relevant details or supporting documentation</li>
+                    <li>Preferred method of response</li>
+                </ul>
             </div>
             
             <div class="section">
                 <h2>21. Supervisory Authority Information</h2>
-                <p>You have the right to lodge a complaint with your local data protection authority.</p>
+                <p>You have the right to lodge a complaint with your local data protection authority if you believe we have not complied with applicable data protection laws.</p>
                 
                 <h3>21.1 Major Supervisory Authorities</h3>
                 
                 <h4>European Union</h4>
                 <ul>
-                    <li>Find your local DPA: <a href="https://edpb.europa.eu">https://edpb.europa.eu</a></li>
+                    <li><strong>European Data Protection Board:</strong> <a href="https://edpb.europa.eu" target="_blank" rel="noopener noreferrer">https://edpb.europa.eu</a></li>
+                    <li>Find your local Data Protection Authority at the link above</li>
                 </ul>
                 
                 <h4>United Kingdom</h4>
                 <ul>
                     <li><strong>Information Commissioner's Office (ICO)</strong></li>
-                    <li>Website: <a href="https://ico.org.uk">https://ico.org.uk</a></li>
+                    <li>Website: <a href="https://ico.org.uk" target="_blank" rel="noopener noreferrer">https://ico.org.uk</a></li>
                     <li>Phone: +44 303 123 1113</li>
+                    <li>Address: Wycliffe House, Water Lane, Wilmslow, Cheshire, SK9 5AF, United Kingdom</li>
                 </ul>
                 
                 <h4>Brazil</h4>
                 <ul>
                     <li><strong>ANPD (Autoridade Nacional de Proteção de Dados)</strong></li>
-                    <li>Website: <a href="https://www.gov.br/anpd">https://www.gov.br/anpd</a></li>
+                    <li>Website: <a href="https://www.gov.br/anpd" target="_blank" rel="noopener noreferrer">https://www.gov.br/anpd</a></li>
+                    <li>Address: Setor Comercial Sul, Quadra 9, Lote C, Edifício Parque Cidade Corporate, Torre C, 4º andar, Brasília-DF, CEP 70308-200</li>
                 </ul>
                 
                 <h4>Canada</h4>
                 <ul>
-                    <li><strong>Privacy Commissioner of Canada</strong></li>
-                    <li>Website: <a href="https://www.priv.gc.ca">https://www.priv.gc.ca</a></li>
+                    <li><strong>Office of the Privacy Commissioner of Canada</strong></li>
+                    <li>Website: <a href="https://www.priv.gc.ca" target="_blank" rel="noopener noreferrer">https://www.priv.gc.ca</a></li>
                     <li>Phone: 1-800-282-1376</li>
+                    <li>Address: 30 Victoria Street, Gatineau, Quebec K1A 1H3</li>
                 </ul>
                 
-                <h4>California</h4>
+                <h4>California, United States</h4>
                 <ul>
                     <li><strong>California Privacy Protection Agency</strong></li>
-                    <li>Website: <a href="https://cppa.ca.gov">https://cppa.ca.gov</a></li>
+                    <li>Website: <a href="https://cppa.ca.gov" target="_blank" rel="noopener noreferrer">https://cppa.ca.gov</a></li>
+                    <li>Address: 2101 Arena Boulevard, Sacramento, CA 95834</li>
                 </ul>
                 
                 <h4>Japan</h4>
                 <ul>
-                    <li><strong>Personal Information Protection Commission</strong></li>
-                    <li>Website: <a href="https://www.ppc.go.jp/en/">https://www.ppc.go.jp/en/</a></li>
+                    <li><strong>Personal Information Protection Commission (PPC)</strong></li>
+                    <li>Website: <a href="https://www.ppc.go.jp/en/" target="_blank" rel="noopener noreferrer">https://www.ppc.go.jp/en/</a></li>
+                    <li>Address: Kasumigaseki Common Gate West Tower 32F, 3-2-1 Kasumigaseki, Chiyoda-ku, Tokyo 100-0013, Japan</li>
                 </ul>
                 
                 <h4>South Korea</h4>
                 <ul>
-                    <li><strong>Personal Information Protection Commission</strong></li>
-                    <li>Website: <a href="https://www.pipc.go.kr">https://www.pipc.go.kr</a></li>
+                    <li><strong>Personal Information Protection Commission (PIPC)</strong></li>
+                    <li>Website: <a href="https://www.pipc.go.kr" target="_blank" rel="noopener noreferrer">https://www.pipc.go.kr</a></li>
+                    <li>Phone: +82-2-2100-3081</li>
                 </ul>
                 
                 <h4>Singapore</h4>
                 <ul>
-                    <li><strong>Personal Data Protection Commission</strong></li>
-                    <li>Website: <a href="https://www.pdpc.gov.sg">https://www.pdpc.gov.sg</a></li>
+                    <li><strong>Personal Data Protection Commission (PDPC)</strong></li>
+                    <li>Website: <a href="https://www.pdpc.gov.sg" target="_blank" rel="noopener noreferrer">https://www.pdpc.gov.sg</a></li>
+                    <li>Address: 10 Pasir Panjang Road, #03-01 Mapletree Business City, Singapore 117438</li>
                 </ul>
+                
+                <h3>21.2 Filing a Complaint</h3>
+                <p>When filing a complaint with a supervisory authority:</p>
+                <ul>
+                    <li>Provide details of the privacy concern or violation</li>
+                    <li>Include relevant documentation and correspondence</li>
+                    <li>Mention that you have contacted us first (if applicable)</li>
+                    <li>Follow the authority's complaint procedures</li>
+                </ul>
+                
+                <p><strong>Note:</strong> Filing a complaint with a supervisory authority does not prevent you from pursuing other legal remedies.</p>
             </div>
             
             <div class="section">
                 <h2>22. Consent and Acceptance</h2>
                 
                 <h3>22.1 Your Consent</h3>
-                <p>By using SolScada, you acknowledge that you have:</p>
+                <p>By using SolScada, you acknowledge and confirm that you have:</p>
                 <ul>
-                    <li>Read and understood this Privacy Policy</li>
-                    <li>Had the opportunity to ask questions</li>
-                    <li>Been informed of your rights</li>
-                    <li>Voluntarily agreed to our data practices</li>
+                    <li>Read this entire Privacy Policy carefully</li>
+                    <li>Understood the information collection and processing practices described</li>
+                    <li>Had the opportunity to ask questions or seek clarification</li>
+                    <li>Been informed of your rights under applicable data protection laws</li>
+                    <li>Voluntarily agreed to our data collection, use, and processing practices</li>
+                    <li>Provided informed consent where required by law</li>
                 </ul>
                 
-                <h3>22.2 Withdrawal of Consent</h3>
-                <p>You can withdraw consent at any time:</p>
+                <h3>22.2 Voluntary Consent</h3>
+                <p>Your consent to this Privacy Policy is:</p>
                 <ul>
-                    <li>Contact us at <a href="mailto:kawsar@scube.com.bd">kawsar@scube.com.bd</a></li>
-                    <li>Delete your account through the app</li>
-                    <li>Processed within 30 days</li>
+                    <li><strong>Freely Given:</strong> Not provided under duress or unfair pressure</li>
+                    <li><strong>Specific:</strong> Related to clearly defined purposes</li>
+                    <li><strong>Informed:</strong> Based on clear and comprehensive information</li>
+                    <li><strong>Unambiguous:</strong> Demonstrated through clear affirmative action</li>
                 </ul>
                 
-                <h3>22.3 If You Do Not Agree</h3>
-                <p>If you do not agree with this Privacy Policy:</p>
+                <h3>22.3 Withdrawal of Consent</h3>
+                <p>You have the right to withdraw your consent at any time. You can do this by:</p>
                 <ul>
-                    <li>Do not use the App</li>
-                    <li>Delete your account if already using</li>
-                    <li>Contact us with questions or concerns</li>
+                    <li>Contacting us at <a href="mailto:kawsar@scube.com.bd">kawsar@scube.com.bd</a> with your withdrawal request</li>
+                    <li>Deleting your account through the app (Profile → Delete Account)</li>
+                    <li>Adjusting specific consent settings in your account preferences (where available)</li>
                 </ul>
+                <p><strong>Processing Time:</strong> Consent withdrawal will be processed within 30 days.</p>
+                <p><strong>Note:</strong> Withdrawing consent does not affect the lawfulness of processing based on consent before withdrawal.</p>
+                
+                <h3>22.4 If You Do Not Agree</h3>
+                <p>If you do not agree with this Privacy Policy or any part of it:</p>
+                <ul>
+                    <li><strong>Do Not Use the App:</strong> Refrain from downloading, installing, or using SolScada</li>
+                    <li><strong>Delete Your Account:</strong> If you are already using the app, delete your account immediately</li>
+                    <li><strong>Contact Us:</strong> Reach out with questions, concerns, or requests for clarification</li>
+                    <li><strong>Seek Alternatives:</strong> Consider other solar monitoring solutions that better align with your privacy preferences</li>
+                </ul>
+                
+                <h3>22.5 Continued Use</h3>
+                <p>Continued use of the App after being notified of changes to this Privacy Policy constitutes acceptance of those changes, subject to applicable legal requirements for consent.</p>
             </div>
             
             <div class="section">
@@ -1168,51 +1537,144 @@
                 
                 <h3>23.1 Governing Law</h3>
                 <ul>
-                    <li><strong>Primary Jurisdiction:</strong> Laws of Bangladesh</li>
-                    <li><strong>Additional Compliance:</strong> Applicable data protection laws in your jurisdiction</li>
+                    <li><strong>Primary Jurisdiction:</strong> This Privacy Policy is governed by the laws of Bangladesh</li>
+                    <li><strong>International Compliance:</strong> We also comply with applicable data protection laws in your jurisdiction</li>
+                    <li><strong>Conflict Resolution:</strong> In case of conflict, the stricter privacy protection standard applies</li>
                 </ul>
                 
-                <h3>23.2 Dispute Resolution</h3>
-                <p><strong>Step 1:</strong> Contact us directly at <a href="mailto:kawsar@scube.com.bd">kawsar@scube.com.bd</a></p>
-                <p><strong>Step 2:</strong> Optional mediation</p>
-                <p><strong>Step 3:</strong> Formal legal action if necessary</p>
+                <h3>23.2 Dispute Resolution Process</h3>
                 
-                <h3>23.3 Regional Exceptions</h3>
+                <h4>Step 1: Direct Contact</h4>
+                <p>Contact us directly to resolve any privacy-related disputes:</p>
                 <ul>
-                    <li><strong>EU/EEA:</strong> Can bring proceedings in courts of member state</li>
-                    <li><strong>California:</strong> Retain all rights under CCPA/CPRA</li>
-                    <li><strong>Brazil:</strong> Retain rights under LGPD</li>
-                    <li><strong>Canada:</strong> May file complaints with Privacy Commissioner</li>
+                    <li>Email: <a href="mailto:kawsar@scube.com.bd">kawsar@scube.com.bd</a></li>
+                    <li>We will respond within 7 business days</li>
+                    <li>We aim to resolve issues within 30 days</li>
                 </ul>
+                
+                <h4>Step 2: Mediation (Optional)</h4>
+                <p>If direct resolution is unsuccessful:</p>
+                <ul>
+                    <li>Either party may propose mediation</li>
+                    <li>Mediation costs to be shared equally</li>
+                    <li>Non-binding process</li>
+                </ul>
+                
+                <h4>Step 3: Formal Legal Action</h4>
+                <p>If mediation fails or is declined:</p>
+                <ul>
+                    <li>Disputes may be brought to competent courts</li>
+                    <li>Subject to jurisdiction-specific rules</li>
+                </ul>
+                
+                <h3>23.3 Regional Exceptions and Additional Rights</h3>
+                
+                <h4>European Union/EEA and United Kingdom</h4>
+                <ul>
+                    <li>Can bring proceedings in courts of your EU member state of residence</li>
+                    <li>Right to lodge complaint with local supervisory authority</li>
+                    <li>GDPR rights take precedence over conflicting terms</li>
+                </ul>
+                
+                <h4>California, United States</h4>
+                <ul>
+                    <li>Retain all rights under CCPA/CPRA</li>
+                    <li>Can file complaints with California Privacy Protection Agency</li>
+                    <li>No waiver of statutory rights</li>
+                </ul>
+                
+                <h4>Brazil</h4>
+                <ul>
+                    <li>Retain all rights under LGPD</li>
+                    <li>Can file complaints with ANPD</li>
+                    <li>Brazilian consumer protection laws apply</li>
+                </ul>
+                
+                <h4>Canada</h4>
+                <ul>
+                    <li>May file complaints with Privacy Commissioner of Canada</li>
+                    <li>Provincial privacy laws may also apply</li>
+                    <li>Federal Court jurisdiction for PIPEDA matters</li>
+                </ul>
+                
+                <h3>23.4 No Waiver of Rights</h3>
+                <p>Nothing in this Privacy Policy should be construed as a waiver of your rights under applicable data protection or consumer protection laws.</p>
             </div>
             
             <div class="section">
                 <h2>24. Additional Disclosures</h2>
                 
                 <h3>24.1 Security Disclaimer</h3>
-                <p>While we implement industry-standard security measures, we cannot guarantee absolute security. You use the App at your own risk.</p>
-                
-                <h3>24.2 Third-Party Links</h3>
-                <p>The App may contain links to third-party websites. This Privacy Policy does not apply to those third parties. We recommend reviewing their privacy policies.</p>
-                
-                <h3>24.3 Aggregate and Anonymized Data</h3>
-                <p>We may create anonymized data that cannot identify you:</p>
+                <p>While we implement industry-standard security measures and continuously work to protect your information:</p>
                 <ul>
-                    <li>Used for analytics and research</li>
-                    <li>May be shared without restriction</li>
-                    <li>Not subject to data subject rights</li>
+                    <li>No method of transmission over the internet is 100% secure</li>
+                    <li>No method of electronic storage is completely secure</li>
+                    <li>We cannot guarantee absolute security of your information</li>
+                    <li>You use the App at your own risk</li>
+                    <li>We encourage you to use strong passwords and enable available security features</li>
                 </ul>
                 
-                <h3>24.4 California Shine the Light</h3>
-                <p>We do not share personal information with third parties for their direct marketing purposes.</p>
+                <h3>24.2 Third-Party Links and Services</h3>
+                <p>The App may contain links to third-party websites, services, or resources:</p>
+                <ul>
+                    <li>This Privacy Policy does not apply to third-party sites or services</li>
+                    <li>We are not responsible for the privacy practices of third parties</li>
+                    <li>We recommend reviewing the privacy policies of any third-party sites you visit</li>
+                    <li>Links do not imply endorsement of third-party privacy practices</li>
+                </ul>
+                
+                <h3>24.3 Aggregate and Anonymized Data</h3>
+                <p>We may create aggregated, anonymized, or de-identified data from personal information:</p>
+                <ul>
+                    <li><strong>Anonymization Process:</strong> Data is processed to remove all identifying information</li>
+                    <li><strong>Use:</strong> Used for analytics, research, and service improvement</li>
+                    <li><strong>Sharing:</strong> May be shared without restriction as it cannot identify individuals</li>
+                    <li><strong>Your Rights:</strong> Not subject to data subject access or deletion rights</li>
+                    <li><strong>Standards:</strong> Created in accordance with applicable legal standards for anonymization</li>
+                </ul>
+                
+                <h3>24.4 California Shine the Light Law</h3>
+                <p>Under California Civil Code Section 1798.83 ("Shine the Light" law):</p>
+                <ul>
+                    <li>We do not share personal information with third parties for their direct marketing purposes</li>
+                    <li>Therefore, no "Shine the Light" disclosure is required</li>
+                    <li>California residents may still request information about our compliance</li>
+                </ul>
+                
+                <h3>24.5 Do Not Track Signals</h3>
+                <p>Our App does not respond to Do Not Track (DNT) signals because:</p>
+                <ul>
+                    <li>We do not track users across third-party websites</li>
+                    <li>We do not use third-party advertising or analytics that track users</li>
+                    <li>All data collection is first-party and essential for app functionality</li>
+                </ul>
+                
+                <h3>24.6 Business Transfers</h3>
+                <p>In the event of a merger, acquisition, reorganization, or sale of assets:</p>
+                <ul>
+                    <li>Your personal information may be transferred as part of that transaction</li>
+                    <li>The acquiring entity must honor this Privacy Policy</li>
+                    <li>We will notify you via email and/or prominent notice in the app</li>
+                    <li>You will have the opportunity to delete your account before the transfer</li>
+                    <li>The new entity must comply with applicable data protection laws</li>
+                </ul>
+                
+                <h3>24.7 Accessibility</h3>
+                <p>We are committed to making this Privacy Policy accessible:</p>
+                <ul>
+                    <li>Available in plain language</li>
+                    <li>Accessible through the app and our website</li>
+                    <li>Alternative formats available upon request</li>
+                    <li>Contact us if you need assistance accessing this policy</li>
+                </ul>
             </div>
             
-            <p class="effective-date">
-                This Privacy Policy is effective as of December 21, 2025<br>
-                Version 1.0 - Comprehensive Global Privacy Policy<br>
-                <strong>Compliant with: GDPR, CCPA/CPRA, LGPD, PIPEDA, APPI, PIPA, PDPA</strong><br><br>
-                © 2025 SCUBE Technologies Ltd. All rights reserved.
-            </p>
+            <div class="effective-date">
+                <p>This Privacy Policy is effective as of <strong>December 21, 2025</strong></p>
+                <p>Version 1.0 - Comprehensive Global Privacy Policy</p>
+                <p><strong>Compliant with: GDPR, CCPA/CPRA, LGPD, PIPEDA, APPI, PIPA, PDPA</strong></p>
+                <p style="margin-top: 15px;">© 2025 SCUBE Technologies Ltd. All rights reserved.</p>
+            </div>
         </div>
     </div>
 </body>
